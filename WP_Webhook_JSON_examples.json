@@ -1,0 +1,10 @@
+{
+  "revalidate_home": {
+    "path": "/",
+    "secret": "REVALIDATE_SECRET_GOES_HERE"
+  },
+  "revalidate_post": {
+    "path": "/blog/tally-prime-setup",
+    "secret": "REVALIDATE_SECRET_GOES_HERE"
+  }
+}
