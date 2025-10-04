@@ -1,5 +1,0 @@
-Vercel DNS rows (PLACEHOLDER):
-A @ 76.76.21.21
-CNAME www cname.vercel-dns.com.
-TXT vercel-challenge.dalmiacomputers.in <VERCEL_TXT_VALUE>
-A wp <CLOUDWAYS_IP>
