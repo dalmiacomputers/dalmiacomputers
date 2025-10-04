@@ -1,0 +1,12 @@
+[
+  {
+    "id": "lap-001",
+    "category": "laptops",
+    "title": "HP 15s - Intel i3",
+    "price": 39990,
+    "currency": "INR",
+    "availability": "InStock",
+    "description": "Sample laptop",
+    "image": "/products/laptops/hp-15s.jpg"
+  }
+]
