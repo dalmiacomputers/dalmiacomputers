@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory Submission Automation - Submit Your Business to 1000+ Directories</title>
+    <meta name="description" content="Automatically submit your business NAP (Name, Address, Phone) to hundreds of free online directories worldwide">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <h1>📋 Directory Submission Pro</h1>
+            </div>
+            <nav>
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#submit">Submit Now</a>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Automate Your Business Listings Across 1000+ Free Directories</h2>
+                <p>Boost your local SEO and online presence by submitting your business information to hundreds of directories in minutes, not months.</p>
+                <a href="#submit" class="cta-button">Start Free Submission</a>
+            </div>
+            <div class="hero-image">
+                <div class="stats-card">
+                    <div class="stat">
+                        <h3>1000+</h3>
+                        <p>Directories</p>
+                    </div>
+                    <div class="stat">
+                        <h3>150+</h3>
+                        <p>Countries</p>
+                    </div>
+                    <div class="stat">
+                        <h3>50+</h3>
+                        <p>Categories</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <h2>Why Choose Our Platform?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon">🤖</div>
+                    <h3>Full Automation</h3>
+                    <p>Our AI-powered system automatically fills forms and submits your business information</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🔐</div>
+                    <h3>OTP Verification</h3>
+                    <p>Automatic handling of SMS, WhatsApp, and email verification codes</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">📊</div>
+                    <h3>Real-time Tracking</h3>
+                    <p>Monitor submission progress and results in real-time dashboard</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🌍</div>
+                    <h3>Global Reach</h3>
+                    <p>Submit to directories in 150+ countries across all industries</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">⚡</div>
+                    <h3>Lightning Fast</h3>
+                    <p>Complete in hours what would take weeks manually</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">📈</div>
+                    <h3>SEO Boost</h3>
+                    <p>Improve local SEO rankings and online visibility</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Submission Form Section -->
+        <section id="submit" class="submission-section">
+            <h2>Submit Your Business Now</h2>
+            <p class="section-subtitle">Fill in your business information once, and we'll submit it everywhere</p>
+
+            <div class="form-container">
+                <!-- Step 1: Business Information -->
+                <div id="step1" class="form-step active">
+                    <h3>Step 1: Business Information</h3>
+                    <form id="businessForm">
+                        <div class="form-group">
+                            <label for="businessName">Business Name *</label>
+                            <input type="text" id="businessName" required placeholder="Your Business Name">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" required placeholder="+1234567890">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" required placeholder="business@example.com">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="website">Website (Optional)</label>
+                            <input type="url" id="website" placeholder="https://yourwebsite.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Street Address *</label>
+                            <input type="text" id="address" required placeholder="123 Main Street">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">City *</label>
+                                <input type="text" id="city" required placeholder="New York">
+                            </div>
+                            <div class="form-group">
+                                <label for="state">State/Province</label>
+                                <input type="text" id="state" placeholder="NY">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="zipCode">Zip/Postal Code</label>
+                                <input type="text" id="zipCode" placeholder="10001">
+                            </div>
+                            <div class="form-group">
+                                <label for="country">Country *</label>
+                                <select id="country" required>
+                                    <option value="">Select Country</option>
+                                    <option value="US">United States</option>
+                                    <option value="UK">United Kingdom</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="AU">Australia</option>
+                                    <option value="IN">India</option>
+                                    <option value="global">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="category">Business Category *</label>
+                            <select id="category" required>
+                                <option value="">Select Category</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description">Business Description</label>
+                            <textarea id="description" rows="4" placeholder="Describe your business (optional)"></textarea>
+                        </div>
+
+                        <button type="button" class="btn-primary" onclick="goToStep2()">Next: Verify Contact</button>
+                    </form>
+                </div>
+
+                <!-- Step 2: OTP Verification -->
+                <div id="step2" class="form-step">
+                    <h3>Step 2: Verify Your Contact Information</h3>
+                    <p>We need to verify your contact information to ensure successful directory submissions</p>
+
+                    <div class="verification-method">
+                        <label>Choose verification method:</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="verifyMethod" value="email" checked>
+                                Email
+                            </label>
+                            <label>
+                                <input type="radio" name="verifyMethod" value="sms">
+                                SMS
+                            </label>
+                            <label>
+                                <input type="radio" name="verifyMethod" value="whatsapp">
+                                WhatsApp
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn-primary" onclick="sendOTP()" id="sendOtpBtn">Send Verification Code</button>
+
+                    <div id="otpInputSection" class="otp-section" style="display:none;">
+                        <div class="form-group">
+                            <label for="otpCode">Enter Verification Code</label>
+                            <input type="text" id="otpCode" maxlength="6" placeholder="000000">
+                        </div>
+                        <button type="button" class="btn-primary" onclick="verifyOTP()">Verify Code</button>
+                        <p class="help-text">Didn't receive? <a href="#" onclick="sendOTP(); return false;">Resend Code</a></p>
+                    </div>
+
+                    <div class="form-navigation">
+                        <button type="button" class="btn-secondary" onclick="goToStep1()">Back</button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Select Directories -->
+                <div id="step3" class="form-step">
+                    <h3>Step 3: Select Directories</h3>
+                    <p>Choose which directories you want to submit to</p>
+
+                    <div class="directory-filters">
+                        <button class="filter-btn active" onclick="selectAllDirectories()">Select All</button>
+                        <button class="filter-btn" onclick="deselectAllDirectories()">Deselect All</button>
+                        <button class="filter-btn" onclick="filterTopDirectories()">Top 100 Only</button>
+                    </div>
+
+                    <div id="directoryList" class="directory-list">
+                        <!-- Populated by JavaScript -->
+                    </div>
+
+                    <div class="selected-count">
+                        <strong id="selectedCount">0</strong> directories selected
+                    </div>
+
+                    <div class="form-navigation">
+                        <button type="button" class="btn-secondary" onclick="goToStep2()">Back</button>
+                        <button type="button" class="btn-primary" onclick="startSubmission()">Start Submission</button>
+                    </div>
+                </div>
+
+                <!-- Step 4: Progress -->
+                <div id="step4" class="form-step">
+                    <h3>Submission in Progress</h3>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div id="progressFill" class="progress-fill"></div>
+                        </div>
+                        <p class="progress-text"><span id="progressText">0%</span> Complete</p>
+                    </div>
+
+                    <div id="resultsContainer" class="results-container">
+                        <h4>Submission Results:</h4>
+                        <div id="resultsList"></div>
+                    </div>
+
+                    <button type="button" class="btn-primary" onclick="downloadReport()" style="display:none;" id="downloadBtn">Download Report</button>
+                    <button type="button" class="btn-secondary" onclick="resetForm()">Submit Another Business</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 Directory Submission Pro. All rights reserved.</p>
+            <p>Automate your business listings and boost your SEO.</p>
+        </footer>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay">
+        <div class="spinner"></div>
+        <p id="loadingText">Processing...</p>
+    </div>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
