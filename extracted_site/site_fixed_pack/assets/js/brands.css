@@ -1,0 +1,7 @@
+
+/* Brand strip animation */
+.brand-strip, #brandStrip{position:relative;overflow:hidden}
+#brandStrip .track{display:flex;gap:18px;will-change:transform;animation:slideLeft 40s linear infinite}
+#brandStrip .brand{display:inline-flex;align-items:center;justify-content:center;min-width:140px;padding:4px 8px;border-radius:10px;border:1px solid #e6eef7;background:#fff}
+#brandStrip img{height:28px;object-fit:contain}
+@keyframes slideLeft{from{transform:translateX(0)} to{transform:translateX(-50%)}}

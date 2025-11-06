@@ -1,0 +1,24 @@
+{
+  "company": {
+    "name": "Dalmia Computers",
+    "email": "dalmiacomputers@gmail.com",
+    "phone_sales": "8145290001",
+    "phone_service": "9832767313",
+    "phone_tdl": "9734290001"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/dalmiashowroom/",
+    "instagram": "https://www.instagram.com/dalmiacomputers/",
+    "whatsapp_channel": "https://whatsapp.com/channel/0029Va4P2HNJuyA3g8qVrE0D",
+    "justdial": "https://www.justdial.com/Purulia/Dalmia-Computers-ICICI-Bank-Bus-Stand-Road/9999P3252-3252-180615141017-I7D9_BZDET",
+    "google_reviews": "https://www.google.com/maps?cid=4690025437030468228"
+  },
+  "reviews": {
+    "mode": "static",
+    "google_place_id": "4690025437030468228",
+    "widget_embed": ""
+  },
+  "recaptcha": {
+    "site_key": "6LdQEv8rAAAAABKeGuaswikJ6MW-qxc8PIsdBLOX"
+  }
+}

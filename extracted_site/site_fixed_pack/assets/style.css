@@ -1,0 +1,49 @@
+/* Minimal, fast CSS (no external dependencies; CSP 'self') */
+:root { --bg:#0b1220; --brand:#2aa1ff; --ink:#101318; --ink2:#2a3246; --paper:#ffffff; --muted:#6b748a; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:#f7f9fc; animation: fadeIn 0.5s ease-in; }
+.wrap { max-width:1100px; margin:0 auto; padding:0 16px; }
+.site-header { background:var(--bg); color:#cfe6ff; animation: slideDown 0.5s ease-out; }
+.site-header .wrap { display:flex; align-items:center; justify-content:space-between; padding:14px 0; }
+.brand { font-weight:800; font-size:20px; color:#fff; text-decoration:none; letter-spacing:.3px; transition: transform 0.3s ease; }
+.brand:hover { transform: scale(1.05); }
+.brand .dc{ background:linear-gradient(45deg,#2aa1ff,#7cd2ff); color:#001b34; padding:2px 6px; border-radius:6px; margin-right:6px; }
+.brand span{ color:var(--brand); }
+nav a { color:#cfe6ff; text-decoration:none; margin-left:16px; opacity:.9; transition: opacity 0.3s ease, color 0.3s ease; }
+nav a:hover, nav a[aria-current="page"] { color:#fff; opacity:1; }
+.hero { padding:48px 16px; text-align:center; animation: fadeInUp 0.8s ease-out; }
+.hero h1 { font-size:32px; margin:.2em 0 .4em; }
+.tagline { color:var(--muted); margin-bottom:16px; }
+.cta { display:inline-block; background:var(--brand); color:#00213a; padding:12px 20px; font-weight:700; border-radius:8px; text-decoration:none; transition: background 0.3s ease, transform 0.3s ease; }
+.cta:hover { background:#1a8cff; transform: translateY(-2px); }
+.grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap:16px; padding:16px 0 32px; animation: fadeIn 1s ease-out; }
+.grid article { background:#fff; border:1px solid #e6ebf5; border-radius:12px; padding:16px; box-shadow:0 2px 6px rgba(0,0,0,0.04); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.grid article:hover { transform: translateY(-5px); box-shadow:0 4px 12px rgba(0,0,0,0.1); }
+.grid h2 { margin-top:0; }
+.muted { color:var(--muted); }
+.checklist { list-style: none; padding:0; }
+.checklist li { padding:6px 0 6px 28px; position:relative; }
+.checklist li::before { content:'✓'; position:absolute; left:0; top:6px; color:green; }
+.site-footer { color:#93a0b8; padding:24px 0 40px; font-size:14px; background:#0b1220; animation: fadeIn 1s ease-out; }
+.site-footer .wrap{ color:#a8b5cc; }
+.site-footer a{ color:#a8b5cc; transition: color 0.3s ease; }
+.site-footer a:hover { color:#fff; }
+.card { background:#fff; border:1px solid #e6ebf5; border-radius:12px; padding:16px; box-shadow:0 2px 6px rgba(0,0,0,0.04); transition: transform 0.3s ease; }
+.card:hover { transform: translateY(-3px); }
+form.card { display:grid; grid-template-columns:1fr; gap:10px; max-width:520px; }
+input, textarea, button { font:inherit; }
+input, textarea { padding:10px 12px; border:1px solid #d7deeb; border-radius:8px; transition: border-color 0.3s ease; }
+input:focus, textarea:focus { border-color:var(--brand); outline:none; }
+button { border:0; padding:12px 16px; border-radius:10px; background:var(--brand); color:#00213a; font-weight:700; cursor:pointer; transition: background 0.3s ease, transform 0.3s ease; }
+button:hover { background:#1a8cff; transform: translateY(-1px); }
+.center { text-align:center; padding:60px 0; }
+.small { font-size:12px; }
+.location { animation: fadeInUp 1s ease-out; }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes slideDown { from { transform:translateY(-100%); } to { transform:translateY(0); } }
+@keyframes fadeInUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+@media (prefers-color-scheme: dark) {
+  body{ background:#0a0f1a; color:#e7eefc; }
+  .grid article, .card{ background:#101826; border-color:#101826; }
+  .cta{ color:#001629; }
+}

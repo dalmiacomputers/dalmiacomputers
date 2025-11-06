@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Customer Care — Universal Profile</title>
+<link href="/assets/css/base.css" rel="stylesheet"/>
+<meta content="Dalmia Computers — Your Trusted Tech Partner in Purulia." name="description"/></head><body>
+<header class="header"><div class="container nav">
+<div class="logo"><img alt="Dalmia Computers" src="/assets/img/logo.png" style="height:28px"/> Dalmia Computers</div>
+<a href="/">Home</a>
+<a href="/products">Products</a>
+<a href="/services">Services</a>
+<a href="/tally">Tally</a>
+<a href="/quickheal">Quick Heal</a>
+<a href="/support">Customer Care</a>
+<a href="/exchange">Exchange Offer</a>
+<a href="/about">About</a>
+<a href="/contact">Contact</a>
+<a href="/blog">Blog</a>
+<a href="/qa">Q&amp;A</a>
+<a href="/heritage">Purulia Heritage</a>
+</div></header>
+<main class="container">
+<section class="card">
+<h1 class="h1">Customer Care — Service Profile</h1>
+<p class="sub">Fill your purchase &amp; device details once. We’ll keep you updated with offers, service reminders, and faster support. Your data is tied to your mobile number.</p>
+</section>
+<section class="card">
+<form class="form" id="ccForm" onsubmit="event.preventDefault(); if(saveUniversal(this,'support')){ alert('Saved! Tap the buttons below to share/update.'); }">
+<div class="grid grid-3">
+<div><label class="small">Full Name</label><input name="name" required=""/></div>
+<div><label class="small">Mobile (primary)</label><input name="mobile" required=""/></div>
+<div><label class="small">Email</label><input name="email" type="email"/></div>
+</div>
+<div><label class="small">Address</label><textarea name="address" placeholder="Street, area, landmark" rows="2"></textarea></div>
+<div class="grid grid-3">
+<div><label class="small">Product Type</label>
+<select name="ptype">
+<option>Laptop</option><option>Desktop</option><option>Printer</option><option>CCTV</option><option>Projector</option><option>Tablet</option><option>Software</option>
+</select>
+</div>
+<div><label class="small">Brand</label><input name="brand" placeholder="HP / Dell / ASUS …"/></div>
+<div><label class="small">Model / Serial</label><input name="serial"/></div>
+</div>
+<div class="grid grid-3">
+<div><label class="small">Purchase Date</label><input name="pdate" type="date"/></div>
+<div><label class="small">Warranty End</label><input name="wend" type="date"/></div>
+<div><label class="small">Preferred Channel</label>
+<select name="pref">
+<option>WhatsApp</option><option>SMS</option><option>Email</option>
+</select>
+</div>
+</div>
+<div class="grid grid-2">
+<div>
+<label class="small">Invoice Upload (placeholder)</label>
+<input accept=".pdf,.jpg,.jpeg,.png" name="invoice" type="file"/>
+<p class="small">Note: file upload needs server script. For now this field is for future — we’ll enable PHP endpoint later.</p>
+</div>
+<div>
+<label class="small">Issue / Notes (if any)</label>
+<textarea name="notes" placeholder="Describe problem, if any" rows="3"></textarea>
+</div>
+</div>
+<label class="small"><input required="" type="checkbox"/> I accept the terms and privacy policy. Data used only for service &amp; updates.</label>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
+<button class="btn" type="submit">Save Profile</button>
+<a class="btn-ghost" id="profileLink" target="_blank">Open My Update Link</a>
+<a class="btn-blue" id="shareWA" target="_blank">Share via WhatsApp</a>
+<a class="btn-ok" id="exportDb">Export Universal DB (JSON)</a>
+<a class="btn" onclick="openReview()">Give a Quick Google Review ⭐</a>
+</div>
+</form>
+</section>
+<section class="notice">
+<b>Motivation:</b> Help your neighbours choose right! If you’re happy with us, tap “Quick Google Review ⭐” — it opens the official review page.
+</section>
+</main>
+<footer class="footer"><div class="container">
+© 2025 Dalmia Computers · Your Trusted Tech Partner · Sales: 97342 90001 · Service: 81452 90001 · Email: dalmiacomputers@gmail.com · GST: 19AEHPD9752K1Z0
+</div></footer>
+<script src="/assets/js/universal-db.js"></script>
+</body></html>

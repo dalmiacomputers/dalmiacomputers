@@ -1,0 +1,38 @@
+{
+  "facebook": {
+    "url": "https://www.facebook.com/dalmiashowroom/",
+    "cta": "Like & Follow on Facebook"
+  },
+  "instagram": {
+    "url": "https://www.instagram.com/dalmiacomputers/",
+    "cta": "Follow us on Instagram"
+  },
+  "youtube": {
+    "url": "https://www.youtube.com/@DalmiaComputers",
+    "cta": "Subscribe on YouTube"
+  },
+  "x": {
+    "url": "https://twitter.com/",
+    "cta": "Follow us on X"
+  },
+  "linkedin": {
+    "url": "https://www.linkedin.com/",
+    "cta": "Connect on LinkedIn"
+  },
+  "gbp": {
+    "url": "https://www.google.com/maps?cid=4690025437030468228",
+    "cta": "Leave a 5\u2605 Google Review"
+  },
+  "justdial": {
+    "url": "https://www.justdial.com/Purulia/Dalmia-Computers-ICICI-Bank-Bus-Stand-Road/9999P3252-3252-180615141017-I7D9_BZDET",
+    "cta": "Rate us on Justdial"
+  },
+  "whatsapp": {
+    "url": "https://whatsapp.com/channel/0029Va4P2HNJuyA3g8qVrE0D",
+    "cta": "Join our WhatsApp Community"
+  },
+  "telegram": {
+    "url": "https://t.me/",
+    "cta": "Join our Telegram"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "site": {
+    "name": "Dalmia Computers",
+    "tagline": "Your Trusted Tech Partner.",
+    "email": "dalmiacomputers@gmail.com",
+    "sales_phone": "+91 97342 90001",
+    "service_phone": "+91 81452 90001",
+    "gst": "19AEHPD9752K1Z0",
+    "whatsapp_channel": "https://whatsapp.com/channel/0029Va4P2HNJuyA3g8qVrE0D",
+    "google_review_cid": "4690025437030468228",
+    "star_product": {
+      "title": "HP Victus 15 Gaming Laptop (Ryzen 5)",
+      "img": "/assets/media/WhatsApp Image 2025-11-03 at 19.41.55 (1).jpeg",
+      "bullets": [
+        "Ryzen 5 / 16GB / 512GB NVMe",
+        "RTX 2050 Graphics",
+        "Backlit KB, 144Hz Display"
+      ],
+      "cta": "Call for Best Price"
+    }
+  },
+  "widgets": {
+    "trustindex_code": "<!-- paste Trustindex widget code here -->",
+    "elfsight_code": "<!-- paste Elfsight widget code here -->"
+  },
+  "reviews": {
+    "enable_sources": [
+      "google",
+      "justdial"
+    ],
+    "max_cards": 25
+  }
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Exchange Offer — Dalmia Computers</title>
+<link href="/assets/css/base.css" rel="stylesheet"/>
+<meta content="Dalmia Computers — Your Trusted Tech Partner in Purulia." name="description"/></head><body>
+<header class="header"><div class="container nav">
+<div class="logo"><img alt="Dalmia Computers" src="/assets/img/logo.png" style="height:28px"/> Dalmia Computers</div>
+<a href="/">Home</a>
+<a href="/products">Products</a>
+<a href="/services">Services</a>
+<a href="/tally">Tally</a>
+<a href="/quickheal">Quick Heal</a>
+<a href="/support">Customer Care</a>
+<a href="/exchange">Exchange Offer</a>
+<a href="/about">About</a>
+<a href="/contact">Contact</a>
+<a href="/blog">Blog</a>
+<a href="/qa">Q&amp;A</a>
+<a href="/heritage">Purulia Heritage</a>
+</div></header>
+<main class="container">
+<section class="hero">
+<h1 class="h1">Exchange Offer</h1>
+<p class="sub">Indicative valuation calculator. Final value is decided by Dalmia Computers after physical inspection.</p>
+</section>
+<section class="grid grid-3">
+<div class="card"><b>Max Exchange (Guideline)</b>
+<ul class="list">
+<li>Laptop — ₹15,000</li>
+<li>Desktop — ₹5,000</li>
+<li>Printer — ₹3,500</li>
+</ul>
+<div class="notice small">Special: Finger neckband free with every valid exchange (subject to availability).</div>
+</div>
+<div class="card"><b>Terms (Summary)</b>
+<ul class="list">
+<li>Evaluation requires device inspection and basic diagnostics.</li>
+<li>Bill/box/accessories improve value; missing items reduce it.</li>
+<li>No pickup for exchange items.</li>
+</ul>
+</div>
+<div class="card"><b>Start Request</b>
+<form class="form" onsubmit="event.preventDefault(); const b=encodeURIComponent('Exchange Request\nName: '+exName.value+'\nPhone: '+exPhone.value+'\nDevice: '+exDevice.value+'\nCondition: '+exCond.value+'\nEst: '+estOut.textContent+'\n'); location.href='mailto:dalmiacomputers@gmail.com?subject=Exchange Request&amp;body='+b;">
+<input id="exName" placeholder="Your Name" required=""/>
+<input id="exPhone" placeholder="Phone" required=""/>
+<input id="exDevice" placeholder="Device (Brand/Model)" required=""/>
+<textarea id="exCond" placeholder="Condition / Issues" rows="3"></textarea>
+<label class="small"><input required="" type="checkbox"/> I accept the exchange terms.</label>
+<button class="btn" type="submit">Submit</button>
+</form>
+</div>
+</section>
+<section class="card">
+<h3>Indicative Calculator</h3>
+<div class="grid grid-3">
+<div>
+<label class="small">Category</label>
+<select class="form" id="cat">
+<option value="laptop">Laptop (max ₹15000)</option>
+<option value="desktop">Desktop (max ₹5000)</option>
+<option value="printer">Printer (max ₹3500)</option>
+</select>
+</div>
+<div>
+<label class="small">Purchase Year</label>
+<select class="form" id="year">
+<option>2025</option><option>2024</option><option>2023</option><option>2022</option><option>2021</option><option>2020</option><option>2019</option><option>2018</option><option>2017</option>
+</select>
+</div>
+<div>
+<label class="small">Condition</label>
+<select class="form" id="cond">
+<option value="excellent">Excellent</option>
+<option value="good">Good</option>
+<option value="fair">Fair</option>
+<option value="poor">Poor</option>
+</select>
+</div>
+<div>
+<label class="small">Battery/Power Health</label>
+<select class="form" id="power">
+<option value="ok">OK</option>
+<option value="weak">Weak</option>
+<option value="dead">Dead</option>
+</select>
+</div>
+<div>
+<label class="small">Display/Print Health</label>
+<select class="form" id="screen">
+<option value="ok">OK</option>
+<option value="minor">Minor Issues</option>
+<option value="major">Major Issues</option>
+</select>
+</div>
+<div>
+<label class="small">Accessories</label>
+<select class="form" id="acc">
+<option value="all">All Included</option>
+<option value="partial">Partial</option>
+<option value="none">None</option>
+</select>
+</div>
+</div>
+<p class="small">This estimate is for guidance only. Final price will be decided after inspection.</p>
+<h3>Estimated Value: <span id="estOut">₹0</span></h3>
+</section>
+<script>
+function clamp(v,min,max){ return Math.max(min, Math.min(max, v)); }
+function compute(){
+  const max = {laptop:15000, desktop:5000, printer:3500}[cat.value];
+  const y = parseInt(year.value,10);
+  const age = new Date().getFullYear() - y;
+  // base depreciation curve (flat 18% per year, capped)
+  let base = max * (1 - 0.18*age);
+  base = clamp(base, max*0.15, max); // floor at 15% of max
+  const condK = {excellent:1.0, good:0.85, fair:0.65, poor:0.4}[cond.value];
+  const powerK = {ok:1.0, weak:0.9, dead:0.7}[power.value];
+  const screenK = {ok:1.0, minor:0.9, major:0.6}[screen.value];
+  const accK = {all:1.0, partial:0.9, none:0.8}[acc.value];
+  let est = base * condK * powerK * screenK * accK;
+  // safety clamp
+  est = clamp(Math.round(est/50)*50, 0, max);
+  document.getElementById('estOut').textContent = '₹' + est.toLocaleString('en-IN');
+}
+['cat','year','cond','power','screen','acc'].forEach(id=>{
+  document.addEventListener('change', (e)=>{ if(e.target && e.target.id===id) compute(); }, {passive:true});
+});
+document.addEventListener('DOMContentLoaded', compute);
+</script>
+</main>
+<footer class="footer"><div class="container">
+© 2025 Dalmia Computers · Your Trusted Tech Partner · Sales: 97342 90001 · Service: 81452 90001 · Email: dalmiacomputers@gmail.com · GST: 19AEHPD9752K1Z0
+</div></footer>
+</body></html>

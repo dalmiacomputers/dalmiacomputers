@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Questions &amp; Answers — Dalmia Computers</title>
+<meta content="Read expert answers on laptops, printers, CCTV, networking, Tally &amp; Quick Heal in your preferred language." name="description"/>
+<link href="/assets/css/light.css" rel="stylesheet"/>
+<script type="application/ld+json">{
+ "@context":"https://schema.org","@type":"WebPage",
+ "name":"Dalmia Computers — Questions & Answers","inLanguage":"en",
+ "publisher":{"@type":"Organization","name":"Dalmia Computers"}
+}</script>
+</head><body>
+<div class="wrap">
+<section class="hero">
+<div class="kv"><span class="badge">Q&amp;A Hub</span><span class="badge">Multilingual</span><span class="badge">SEO-Optimized</span></div>
+<h1 class="h1">Questions &amp; Answers</h1>
+<p class="lead">Choose a language. Tap any question to reveal 2–3 answers written in a clean, helpful voice.</p>
+<div class="grid grid-3">
+<div><label class="small">Language</label>
+<select id="lang">
+<option value="en">English</option>
+<option value="hi">हिन्दी</option>
+<option value="bn">বাংলা</option>
+<option value="mr">मराठी</option>
+<option value="ta">தமிழ்</option>
+<option value="te">తెలుగు</option>
+<option value="kn">ಕನ್ನಡ</option>
+<option value="ml">മലയാളം</option>
+<option value="pa">ਪੰਜਾਬੀ</option>
+<option value="gu">ગુજરાતી</option>
+<option value="or">ଓଡ଼ିଆ</option>
+<option value="ne">नेपाली</option>
+<option value="ur">اردو</option>
+<option value="sa">संस्कृतम्</option>
+<option value="as">অসমীয়া</option>
+<option value="kok">Konkani</option>
+<option value="mni">Manipuri</option>
+<option value="brx">Bodo</option>
+<option value="doi">Dogri</option>
+<option value="sat">Santali</option>
+<option value="ks">كٲشُر</option>
+<option value="mai">मैथिली</option>
+<option value="sd">سنڌي</option>
+<option value="ar">Arabic</option>
+<option value="fr">French</option>
+<option value="de">German</option>
+<option value="es">Spanish</option>
+<option value="zh">Chinese</option>
+<option value="ja">Japanese</option>
+<option value="ko">Korean</option>
+</select>
+</div>
+<div><label class="small">Search</label><input id="search" placeholder="Type keywords e.g., SSD, CCTV, Tally"/></div>
+<div><label class="small"> </label><a class="btn" href="/forms/request-product.php">Request a Product</a></div>
+</div>
+</section>
+<section class="card">
+<div id="list"></div>
+</section>
+<footer>© 2025 Dalmia Computers · Your Trusted Tech Partner</footer>
+</div>
+<script src="/assets/js/qa.js"></script>
+<script>
+document.getElementById('lang').addEventListener('change', e=>loadLang(e.target.value));
+document.getElementById('search').addEventListener('input', function(){
+  const q = this.value.toLowerCase();
+  const clone = {...DB, items: (DB.items||[]).filter(it => (it.q+it.a.join(' ')).toLowerCase().includes(q))};
+  const box = document.getElementById('list'); box.innerHTML='';
+  (clone.items||[]).forEach((it,i)=>{
+    const w=document.createElement('div'); w.className='card';
+    const qq=document.createElement('div'); qq.className='q'; qq.textContent='Q?. '+it.q;
+    const ans=document.createElement('div'); ans.className='a'; ans.style.display='none';
+    ans.innerHTML = it.a.map((x,idx)=>`<div class="card"><b>Answer ${idx+1}:</b> ${x}</div>`).join('');
+    qq.addEventListener('click',()=>{ ans.style.display = ans.style.display==='none'?'block':'none'; });
+    w.appendChild(qq); w.appendChild(ans); box.appendChild(w);
+  });
+});
+</script>
+</body></html>

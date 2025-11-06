@@ -1,0 +1,21 @@
+{
+  "period": "Monthly",
+  "prizes": [
+    {
+      "rank": 1,
+      "title": "Grand Prize",
+      "desc": "Premium Gadget"
+    },
+    {
+      "rank": 2,
+      "title": "2nd Prize",
+      "desc": "Wireless Earbuds"
+    },
+    {
+      "rank": 3,
+      "title": "3rd Prize",
+      "desc": "Smart Accessory"
+    }
+  ],
+  "referral_note": "Share your referral code. Highest valid referrals also get a gift."
+}

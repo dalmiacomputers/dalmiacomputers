@@ -1,0 +1,12 @@
+
+BEGIN:VCARD
+VERSION:3.0
+N:Dalmia;Computers;;;
+FN:Dalmia Computers
+ORG:Dalmia Computers
+TITLE:Your Trusted Tech Partner
+TEL;TYPE=work,voice:+91 9734290001
+EMAIL;TYPE=internet:dalmiacomputers@gmail.com
+ADR;TYPE=work:;;Bikash Bhawan, Near ICICI Bank, Ranchi Road;Purulia;;723101;IN
+URL:https://dalmiacomputers.in/
+END:VCARD

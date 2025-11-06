@@ -1,0 +1,72 @@
+[
+  {
+    "name": "HP",
+    "support": "https://support.hp.com",
+    "phone": "1800-258-7170"
+  },
+  {
+    "name": "Dell",
+    "support": "https://www.dell.com/support",
+    "phone": "1800-425-2067"
+  },
+  {
+    "name": "ASUS",
+    "support": "https://www.asus.com/support/",
+    "phone": "1800-2090-365"
+  },
+  {
+    "name": "Lenovo",
+    "support": "https://pcsupport.lenovo.com/",
+    "phone": "1800-419-7555"
+  },
+  {
+    "name": "Acer",
+    "support": "https://www.acer.com/support/",
+    "phone": "1800-116-677"
+  },
+  {
+    "name": "MSI",
+    "support": "https://www.msi.com/support",
+    "phone": "1800-102-9900"
+  },
+  {
+    "name": "Gigabyte",
+    "support": "https://www.gigabyte.com/Support",
+    "phone": "022-40633222"
+  },
+  {
+    "name": "Samsung",
+    "support": "https://www.samsung.com/in/support/",
+    "phone": "1800-5726-7864"
+  },
+  {
+    "name": "Canon",
+    "support": "https://in.canon/en/support",
+    "phone": "1860-180-3366"
+  },
+  {
+    "name": "Epson",
+    "support": "https://epson.co.in/support",
+    "phone": "1800-425-0011"
+  },
+  {
+    "name": "Brother",
+    "support": "https://www.brother.in/en/support",
+    "phone": "1800-209-8904"
+  },
+  {
+    "name": "Hikvision",
+    "support": "https://www.hikvision.com/en/support/",
+    "phone": "1800-103-9551"
+  },
+  {
+    "name": "Quick Heal",
+    "support": "https://www.quickheal.com/support",
+    "phone": "1800-121-7377"
+  },
+  {
+    "name": "Tally",
+    "support": "https://www.tallysolutions.com/support/",
+    "phone": "1800-309-8859"
+  }
+]

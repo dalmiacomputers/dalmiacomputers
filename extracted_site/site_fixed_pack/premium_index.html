@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dalmia Computers - Premium Computer Showroom in Purulia</title>
+    <meta name="description" content="Premium computer showroom offering laptops, desktops, printers, CCTV systems, and tech accessories in Purulia. Expert service, competitive prices, warranty support.">
+    <meta name="keywords" content="computers, laptops, desktops, printers, CCTV, Purulia, tech store, computer repair">
+    <meta name="author" content="Dalmia Computers">
+    <meta name="robots" content="index, follow">
+    <meta name="csrf-token" content="<?php echo bin2hex(random_bytes(32)); ?>">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Dalmia Computers - Premium Computer Showroom">
+    <meta property="og:description" content="Your trusted tech partner in Purulia for all computer needs">
+    <meta property="og:image" content="/assets/img/logo.png">
+    <meta property="og:url" content="https://dalmiacomputers.in">
+    <meta property="og:type" content="business.business">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/assets/favicon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/premium-theme.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+    <link rel="stylesheet" href="/assets/css/animations.css">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ComputerStore",
+        "name": "Dalmia Computers",
+        "image": "https://dalmiacomputers.in/assets/img/logo.png",
+        "telephone": "+919734290001",
+        "email": "dalmiacomputers@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Bikash Bhawan, Near ICICI Bank, Ranchi Road",
+            "addressLocality": "Purulia",
+            "postalCode": "723101",
+            "addressCountry": "IN"
+        },
+        "url": "https://dalmiacomputers.in",
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 23.33,
+            "longitude": 86.365
+        },
+        "openingHoursSpecification": [{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+            "opens": "10:00",
+            "closes": "20:00"
+        }],
+        "priceRange": "₹₹",
+        "paymentAccepted": ["Cash", "Credit Card", "UPI", "Bank Transfer"],
+        "currenciesAccepted": "INR"
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="/assets/logo/dc-logo.svg" alt="Dalmia Computers" class="logo">
+                    <span class="brand-text">Dalmia <strong>Computers</strong></span>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="#products" class="nav-link">Products</a></li>
+                        <li><a href="#services" class="nav-link">Services</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav-actions">
+                    <button class="btn-search" id="search-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    <a href="tel:+919734290001" class="btn btn-primary">Call Now</a>
+                    <button class="nav-toggle" id="nav-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="slide active" data-bg="/assets/hero/laptop.webp">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Premium Laptops & Desktops</h1>
+                        <p class="hero-subtitle">Latest technology, best prices, expert support</p>
+                        <div class="hero-actions">
+                            <a href="#products" class="btn btn-primary btn-lg">Explore Products</a>
+                            <a href="#contact" class="btn btn-outline btn-lg">Get Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" data-bg="/assets/hero/printer.webp">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Professional Printing Solutions</h1>
+                        <p class="hero-subtitle">Printers, scanners, and complete office setups</p>
+                        <div class="hero-actions">
+                            <a href="#products" class="btn btn-primary btn-lg">View Printers</a>
+                            <a href="#services" class="btn btn-outline btn-lg">AMC Plans</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" data-bg="/assets/hero/cctv.webp">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Advanced CCTV Systems</h1>
+                        <p class="hero-subtitle">Complete security solutions with installation</p>
+                        <div class="hero-actions">
+                            <a href="#products" class="btn btn-primary btn-lg">Security Systems</a>
+                            <a href="#contact" class="btn btn-outline btn-lg">Free Survey</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-controls">
+            <button class="hero-prev">‹</button>
+            <div class="hero-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
+            <button class="hero-next">›</button>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Free Delivery</h3>
+                    <p>Within 200km radius</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Warranty Support</h3>
+                    <p>Comprehensive coverage</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3>Expert Service</h3>
+                    <p>Certified technicians</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Best Prices</h3>
+                    <p>Competitive rates</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Products</h2>
+                <p class="section-subtitle">Premium technology solutions for every need</p>
+            </div>
+            
+            <div class="product-categories">
+                <div class="category-card" data-category="laptops">
+                    <div class="category-image">
+                        <img src="/assets/hero/laptop.png" alt="Laptops" loading="lazy">
+                    </div>
+                    <div class="category-content">
+                        <h3>Laptops</h3>
+                        <p>Gaming, Business, Student laptops from top brands</p>
+                        <a href="/products/laptops.html" class="btn btn-secondary">View All</a>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="desktops">
+                    <div class="category-image">
+                        <img src="/assets/hero/desktop.png" alt="Desktops" loading="lazy">
+                    </div>
+                    <div class="category-content">
+                        <h3>Desktops</h3>
+                        <p>Custom builds, workstations, and ready systems</p>
+                        <a href="/products/desktops.html" class="btn btn-secondary">View All</a>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="printers">
+                    <div class="category-image">
+                        <img src="/assets/hero/printer.png" alt="Printers" loading="lazy">
+                    </div>
+                    <div class="category-content">
+                        <h3>Printers</h3>
+                        <p>Inkjet, laser, and multifunction printers</p>
+                        <a href="/products/printers.html" class="btn btn-secondary">View All</a>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="cctv">
+                    <div class="category-image">
+                        <img src="/assets/hero/cctv.png" alt="CCTV" loading="lazy">
+                    </div>
+                    <div class="category-content">
+                        <h3>CCTV Systems</h3>
+                        <p>IP cameras, DVR/NVR, complete security solutions</p>
+                        <a href="/products/cctv.html" class="btn btn-secondary">View All</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Complete tech support and solutions</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Repair & Maintenance</h3>
+                    <p>Expert repair services for all computer hardware</p>
+                    <ul>
+                        <li>Laptop screen replacement</li>
+                        <li>Hardware upgrades</li>
+                        <li>Virus removal</li>
+                        <li>Data recovery</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>AMC Plans</h3>
+                    <p>Annual maintenance contracts for businesses</p>
+                    <ul>
+                        <li>Regular maintenance</li>
+                        <li>Priority support</li>
+                        <li>Discounted repairs</li>
+                        <li>On-site service</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">📹</div>
+                    <h3>CCTV Installation</h3>
+                    <p>Complete security system setup and configuration</p>
+                    <ul>
+                        <li>Site survey</li>
+                        <li>Professional installation</li>
+                        <li>Remote monitoring setup</li>
+                        <li>Training & support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Visit our showroom or contact us for expert advice</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Bikash Bhawan, Near ICICI Bank<br>Ranchi Road, Purulia - 723101</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+919734290001">+91 9734290001</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:dalmiacomputers@gmail.com">dalmiacomputers@gmail.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Mon-Sat: 10:00 AM - 8:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contact-form">
+                        <h3>Send Message</h3>
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="mobile" placeholder="Mobile Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <select name="service" required>
+                                <option value="">Select Service</option>
+                                <option value="laptop">Laptop Purchase</option>
+                                <option value="desktop">Desktop Purchase</option>
+                                <option value="printer">Printer Purchase</option>
+                                <option value="cctv">CCTV Installation</option>
+                                <option value="repair">Repair Service</option>
+                                <option value="amc">AMC Plan</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="/assets/logo/dc-logo.svg" alt="Dalmia Computers" class="footer-logo">
+                        <h3>Dalmia Computers</h3>
+                        <p>Your trusted tech partner in Purulia</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="/products/laptops.html">Laptops</a></li>
+                        <li><a href="/products/desktops.html">Desktops</a></li>
+                        <li><a href="/products/printers.html">Printers</a></li>
+                        <li><a href="/products/cctv.html">CCTV Systems</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="/services/repair.html">Repair & Service</a></li>
+                        <li><a href="/services/amc.html">AMC Plans</a></li>
+                        <li><a href="/services/cctv.html">CCTV Installation</a></li>
+                        <li><a href="/services/networking.html">Networking</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">WhatsApp</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dalmia Computers. All rights reserved. | GST: 19AEHPD9752K1Z0</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/919734290001" target="_blank" rel="noopener">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/assets/js/premium-core.js"></script>
+    <script src="/assets/js/slider.js"></script>
+    <script src="/assets/js/forms.js"></script>
+    <script src="/assets/js/animations.js"></script>
+</body>
+</html>

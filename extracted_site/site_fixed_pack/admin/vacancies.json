@@ -1,0 +1,37 @@
+{
+  "why": [
+    "Ownership culture with learning sprints",
+    "Customer-first ethos; documentation + follow-ups",
+    "Tools and mentorship; flexible growth paths"
+  ],
+  "roles": [
+    {
+      "title": "Sales Associate",
+      "dept": "Retail & B2B",
+      "type": "Full-time",
+      "location": "On-site",
+      "desc": "Guide buyers, manage demo zones, coordinate with service for seamless delivery."
+    },
+    {
+      "title": "Service Technician",
+      "dept": "Repairs",
+      "type": "Full-time",
+      "location": "On-site",
+      "desc": "Laptop/PC diagnosis, part replacement, quality control & ticket hygiene."
+    },
+    {
+      "title": "Network/CCTV Engineer",
+      "dept": "Field",
+      "type": "Full-time",
+      "location": "On-site",
+      "desc": "Site surveys, cabling, switching, camera layouts, remote view setup."
+    },
+    {
+      "title": "Tally/TDL Specialist",
+      "dept": "Software",
+      "type": "Full-time",
+      "location": "On-site",
+      "desc": "Implementation, TDL modules, GST/e-invoice workflows, training."
+    }
+  ]
+}

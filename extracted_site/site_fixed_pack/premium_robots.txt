@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://dalmiacomputers.in/sitemap.xml
+
+# Disallow admin areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /uploads/
+Disallow: /includes/
+
+# Allow important pages
+Allow: /products/
+Allow: /services/
+Allow: /contact/
+Allow: /about/
+
+# Crawl delay
+Crawl-delay: 1

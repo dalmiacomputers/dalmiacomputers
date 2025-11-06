@@ -1,0 +1,138 @@
+[
+  {
+    "name": "HP",
+    "src": "/assets/brands/hp.svg"
+  },
+  {
+    "name": "DELL",
+    "src": "/assets/brands/dell.svg"
+  },
+  {
+    "name": "ASUS",
+    "src": "/assets/brands/asus.svg"
+  },
+  {
+    "name": "ACER",
+    "src": "/assets/brands/acer.svg"
+  },
+  {
+    "name": "SAMSUNG",
+    "src": "/assets/brands/samsung.svg"
+  },
+  {
+    "name": "MSI",
+    "src": "/assets/brands/msi.svg"
+  },
+  {
+    "name": "GIGABYTE",
+    "src": "/assets/brands/gigabyte.svg"
+  },
+  {
+    "name": "LENOVO",
+    "src": "/assets/brands/lenovo.svg"
+  },
+  {
+    "name": "EPSON",
+    "src": "/assets/brands/epson.svg"
+  },
+  {
+    "name": "BROTHER",
+    "src": "/assets/brands/brother.svg"
+  },
+  {
+    "name": "CANON",
+    "src": "/assets/brands/canon.svg"
+  },
+  {
+    "name": "COOLER MASTER",
+    "src": "/assets/brands/cooler-master.svg"
+  },
+  {
+    "name": "ZEBRONICS",
+    "src": "/assets/brands/zebronics.svg"
+  },
+  {
+    "name": "AOC",
+    "src": "/assets/brands/aoc.svg"
+  },
+  {
+    "name": "IMAGEKING",
+    "src": "/assets/brands/imageking.svg"
+  },
+  {
+    "name": "HYPERX",
+    "src": "/assets/brands/hyperx.svg"
+  },
+  {
+    "name": "ANT ESPORTS",
+    "src": "/assets/brands/ant-esports.svg"
+  },
+  {
+    "name": "EVOFOX",
+    "src": "/assets/brands/evofox.svg"
+  },
+  {
+    "name": "BEETEL",
+    "src": "/assets/brands/beetel.svg"
+  },
+  {
+    "name": "CP PLUS",
+    "src": "/assets/brands/cp-plus.svg"
+  },
+  {
+    "name": "HIKVISION",
+    "src": "/assets/brands/hikvision.svg"
+  },
+  {
+    "name": "PORTRONICS",
+    "src": "/assets/brands/portronics.svg"
+  },
+  {
+    "name": "FINGERS",
+    "src": "/assets/brands/fingers.svg"
+  },
+  {
+    "name": "EVM",
+    "src": "/assets/brands/evm.svg"
+  },
+  {
+    "name": "SEAGATE",
+    "src": "/assets/brands/seagate.svg"
+  },
+  {
+    "name": "WESTERN DIGITAL",
+    "src": "/assets/brands/western-digital.svg"
+  },
+  {
+    "name": "CRUCIAL",
+    "src": "/assets/brands/crucial.svg"
+  },
+  {
+    "name": "ADATA",
+    "src": "/assets/brands/adata.svg"
+  },
+  {
+    "name": "XPG",
+    "src": "/assets/brands/xpg.svg"
+  },
+  {
+    "name": "KINGSTON",
+    "src": "/assets/brands/kingston.svg"
+  },
+  {
+    "name": "SANDISK",
+    "src": "/assets/brands/sandisk.svg"
+  },
+  {
+    "name": "CLARION",
+    "src": "/assets/brands/clarion.svg"
+  },
+  {
+    "name": "BOAT",
+    "src": "/assets/brands/boat.svg"
+  },
+  {
+    "name": "NOISE",
+    "src": "/assets/brands/noise.svg"
+  }
+]

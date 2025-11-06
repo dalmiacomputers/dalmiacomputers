@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Logitech Wireless Mouse M170",
+    "img": "/assets/brand/logitech.png",
+    "slug": "logitech-m170",
+    "badges": [
+      "Bestseller"
+    ],
+    "desc": "Reliable 2.4G wireless mouse. 1-year warranty."
+  },
+  {
+    "name": "SanDisk Ultra 128GB USB 3.0",
+    "img": "/assets/brand/sandisk.png",
+    "slug": "sandisk-128-usb3",
+    "badges": [
+      "Hot"
+    ],
+    "desc": "Up to 130MB/s read speeds."
+  },
+  {
+    "name": "WD Blue 1TB NVMe",
+    "img": "/assets/brand/wd.png",
+    "slug": "wd-blue-1tb-nvme",
+    "badges": [
+      "New"
+    ],
+    "desc": "Gen3 NVMe for everyday speed."
+  },
+  {
+    "name": "Quick Heal Total Security (1 PC, 1 Year)",
+    "img": "/assets/brand/quickheal.png",
+    "slug": "qh-ts-1pc",
+    "badges": [
+      "Recommended"
+    ],
+    "desc": "Full-suite protection with parental control."
+  },
+  {
+    "name": "TallyPrime Silver (Single User)",
+    "img": "/assets/brand/tally.png",
+    "slug": "tally-silver",
+    "badges": [
+      "Pro"
+    ],
+    "desc": "Smart accounting for SMEs."
+  }
+]

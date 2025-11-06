@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Offers — Dalmia Computers</title>
+<link href="/assets/css/dc-patch.css" rel="stylesheet"/>
+<meta content="Dalmia Computers — Your Trusted Tech Partner in Purulia." name="description"/></head>
+<body>
+<main class="wrap">
+<h1>Customer Offers</h1>
+<p>Monthly changing gifts &amp; schemes. Edit <code>/pages/offers/offers.json</code> or use Admin ▶ Offers.</p>
+<section class="grid cols-3" id="offers"></section>
+<section class="card">
+<h3>Embed Reviews (Paste later via Admin)</h3>
+<div class="grid">
+<iframe src="/widgets/trustindex.html" style="width:100%;min-height:280px;border:0;background:#0a1523"></iframe>
+<iframe src="/widgets/elfsight.html" style="width:100%;min-height:280px;border:0;background:#0a1523"></iframe>
+</div>
+</section>
+</main>
+<script>
+async function loadOffers(){
+  try{
+    const res = await fetch('./offers.json', {cache:'no-store'});
+    const list = await res.json();
+    const wrap = document.getElementById('offers');
+    wrap.innerHTML = list.map(o => `
+      <article class="card">
+        <h3>${o.title}</h3>
+        <p>${o.copy}</p>
+        <div class="badge">${o.validity||'Valid this month'}</div>
+      </article>
+    `).join('');
+  }catch(e){
+    document.getElementById('offers').innerHTML = '<div class="card">No offers configured yet.</div>';
+  }
+}
+loadOffers();
+</script>
+</body>
+</html>

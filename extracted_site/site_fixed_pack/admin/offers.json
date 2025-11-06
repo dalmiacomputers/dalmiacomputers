@@ -1,0 +1,20 @@
+{
+  "month": "November 2025",
+  "gifts": [
+    {
+      "title": "Wireless Neckband",
+      "desc": "Free with every exchange (limited stock)",
+      "img": "./assets/offers/neckband.png"
+    },
+    {
+      "title": "Laptop Bag",
+      "desc": "On select premium laptops",
+      "img": "./assets/offers/bag.png"
+    },
+    {
+      "title": "Ink Bottle Combo",
+      "desc": "On eligible ink-tank printers",
+      "img": "./assets/offers/ink.png"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Dalmia Computers</title>
+    <meta name="recaptcha-site-key" content="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI">
+    <link rel="stylesheet" href="/assets/css/premium-theme.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="/"><img src="/assets/logo/dc-logo.svg" alt="Dalmia Computers" class="logo"></a>
+                    <span class="brand-text">Dalmia <strong>Computers</strong></span>
+                </div>
+                <div class="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="/" class="nav-link">Home</a></li>
+                        <li><a href="/products/" class="nav-link">Products</a></li>
+                        <li><a href="/services/" class="nav-link">Services</a></li>
+                        <li><a href="/contact/" class="nav-link active">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section style="padding: 80px 0;">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Bikash Bhawan, Near ICICI Bank<br>Ranchi Road, Purulia - 723101</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+919734290001">+91 9734290001</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:dalmiacomputers@gmail.com">dalmiacomputers@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Mon-Sat: 10:00 AM - 8:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contact-form" data-recaptcha="true" data-ajax="true" action="/api/save_contact.php">
+                        <h3>Send Message</h3>
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="mobile" placeholder="Mobile Number" pattern="[6-9][0-9]{9}" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <select name="service" required>
+                                <option value="">Select Service</option>
+                                <option value="laptop">Laptop Purchase</option>
+                                <option value="desktop">Desktop Purchase</option>
+                                <option value="printer">Printer Purchase</option>
+                                <option value="cctv">CCTV Installation</option>
+                                <option value="repair">Repair Service</option>
+                                <option value="amc">AMC Plan</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Dalmia Computers | <a href="/">Home</a> | <a href="/admin/">Admin</a></p>
+        </div>
+    </footer>
+
+    <script src="/assets/js/recaptcha-handler.js"></script>
+</body>
+</html>

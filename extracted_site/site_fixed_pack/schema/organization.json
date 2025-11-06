@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Dalmia Computers",
+  "url": "https://dalmiacomputers.in/",
+  "logo": "https://dalmiacomputers.in/assets/logo.png",
+  "email": "mailto:dalmiacomputers@gmail.com",
+  "telephone": "+91 97342 90001",
+  "sameAs": [
+    "https://facebook.com/dalmiashowroom",
+    "https://instagram.com/dalmiacomputers",
+    "https://whatsapp.com/channel/0029Va4P2HNJuyA3g8qVrE0D"
+  ]
+}

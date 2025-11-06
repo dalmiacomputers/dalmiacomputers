@@ -1,0 +1,4 @@
+Upload & Extract into /public_html (overwrite). Then:
+- Replace assets/img/dc-logo.svg with official logo if needed
+- Drop real brand PNG logos into assets/brands/ (see README)
+- Enable Trustindex by pasting widget HTML into assets/data/settings.json

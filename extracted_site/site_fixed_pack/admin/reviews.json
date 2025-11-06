@@ -1,0 +1,177 @@
+[
+  {
+    "name": "A. Roy",
+    "rating": 4,
+    "text": "Genuine parts, fair pricing, and solid guidance.",
+    "source": "Justdial",
+    "avatar": "./admin/avatars/a1.png"
+  },
+  {
+    "name": "S. Gupta",
+    "rating": 4,
+    "text": "Laptop upgrade done right. Feels brand new.",
+    "source": "Justdial",
+    "avatar": "./admin/avatars/a2.png"
+  },
+  {
+    "name": "R. Sharma",
+    "rating": 4,
+    "text": "Genuine parts, fair pricing, and solid guidance.",
+    "source": "Facebook",
+    "avatar": "./admin/avatars/a3.png"
+  },
+  {
+    "name": "P. Sen",
+    "rating": 5,
+    "text": "Genuine parts, fair pricing, and solid guidance.",
+    "source": "GBP",
+    "avatar": "./admin/avatars/a4.png"
+  },
+  {
+    "name": "M. Das",
+    "rating": 4,
+    "text": "Great staff and super quick fix. Highly recommended!",
+    "source": "GBP",
+    "avatar": "./admin/avatars/a5.png"
+  },
+  {
+    "name": "N. Verma",
+    "rating": 5,
+    "text": "Laptop upgrade done right. Feels brand new.",
+    "source": "GBP",
+    "avatar": "./admin/avatars/a6.png"
+  },
+  {
+    "name": "K. Bose",
+    "rating": 5,
+    "text": "Genuine parts, fair pricing, and solid guidance.",
+    "source": "Facebook",
+    "avatar": "./admin/avatars/a7.png"
+  },
+  {
+    "name": "T. Khan",
+    "rating": 5,
+    "text": "CCTV install was neat; remote view works great.",
+    "source": "Justdial",
+    "avatar": "./admin/avatars/a8.png"
+  },
+  {
+    "name": "I. Mishra",
+    "rating": 5,
+    "text": "Great staff and super quick fix. Highly recommended!",
+    "source": "Facebook",
+    "avatar": "./admin/avatars/a9.png"
+  },
+  {
+    "name": "D. Ghosh",
+    "rating": 5,
+    "text": "Great staff and super quick fix. Highly recommended!",
+    "source": "GBP",
+    "avatar": "./admin/avatars/a10.png"
+  },
+  {
+    "name": "R. Paul",
+    "rating": 4,
+    "text": "Genuine parts, fair pricing, and solid guidance.",
+    "source": "Facebook",
+    "avatar": "./admin/avatars/a11.png"
+  },
+  {
+    "name": "B. Yadav",
+    "rating": 5,
+    "text": "Great staff and super quick fix. Highly recommended!",
+    "source": "GBP",
+    "avatar": "./admin/avatars/a12.png"
+  },
+  {
+    "name": "C. Jain",
+    "rating": 5,
+    "text": "CCTV install was neat; remote view works great.",
+    "source": "Justdial",
+    "avatar": "./admin/avatars/a13.png"
+  },
+  {
+    "name": "V. Iyer",
+    "rating": 4,
+    "text": "Genuine parts, fair pricing, and solid guidance.",
+    "source": "Justdial",
+    "avatar": "./admin/avatars/a14.png"
+  },
+  {
+    "name": "H. Sinha",
+    "rating": 5,
+    "text": "Tally setup + training was smooth and helpful.",
+    "source": "Justdial",
+    "avatar": "./admin/avatars/a15.png"
+  },
+  {
+    "name": "Z. Ali",
+    "rating": 5,
+    "text": "CCTV install was neat; remote view works great.",
+    "source": "Facebook",
+    "avatar": "./admin/avatars/a16.png"
+  },
+  {
+    "name": "U. Banerjee",
+    "rating": 5,
+    "text": "CCTV install was neat; remote view works great.",
+    "source": "GBP",
+    "avatar": "./admin/avatars/a17.png"
+  },
+  {
+    "name": "L. Dey",
+    "rating": 4,
+    "text": "Great staff and super quick fix. Highly recommended!",
+    "source": "GBP",
+    "avatar": "./admin/avatars/a18.png"
+  },
+  {
+    "name": "G. Poddar",
+    "rating": 4,
+    "text": "Tally setup + training was smooth and helpful.",
+    "source": "Facebook",
+    "avatar": "./admin/avatars/a19.png"
+  },
+  {
+    "name": "F. Kundu",
+    "rating": 5,
+    "text": "CCTV install was neat; remote view works great.",
+    "source": "Facebook",
+    "avatar": "./admin/avatars/a20.png"
+  },
+  {
+    "name": "Y. Mehta",
+    "rating": 4,
+    "text": "Tally setup + training was smooth and helpful.",
+    "source": "GBP",
+    "avatar": "./admin/avatars/a21.png"
+  },
+  {
+    "name": "O. Agarwal",
+    "rating": 4,
+    "text": "CCTV install was neat; remote view works great.",
+    "source": "Justdial",
+    "avatar": "./admin/avatars/a22.png"
+  },
+  {
+    "name": "J. Chowdhury",
+    "rating": 4,
+    "text": "Genuine parts, fair pricing, and solid guidance.",
+    "source": "Justdial",
+    "avatar": "./admin/avatars/a23.png"
+  },
+  {
+    "name": "E. Jaiswal",
+    "rating": 5,
+    "text": "Laptop upgrade done right. Feels brand new.",
+    "source": "Justdial",
+    "avatar": "./admin/avatars/a24.png"
+  },
+  {
+    "name": "Q. Chatterjee",
+    "rating": 5,
+    "text": "Tally setup + training was smooth and helpful.",
+    "source": "Justdial",
+    "avatar": "./admin/avatars/a25.png"
+  }
+]

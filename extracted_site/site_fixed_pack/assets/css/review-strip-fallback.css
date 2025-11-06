@@ -1,0 +1,8 @@
+
+/* Injected review strip fallback (in case older CSS loads) */
+.review-strip{display:flex;gap:12px;overflow:auto;padding:10px;border:1px solid rgba(11,31,51,.08);border-radius:12px;background:#fff;scrollbar-width:none}
+.review-strip::-webkit-scrollbar{display:none}
+.review-card{min-width:280px;max-width:320px;border:1px solid rgba(11,31,51,.08);border-radius:12px;padding:10px;background:#fff}
+.review-card .meta{display:flex;align-items:center;gap:8px}
+.review-card img{width:36px;height:36px;border-radius:50%}
+.review-card .name{font-weight:800}

@@ -1,0 +1,58 @@
+
+:root{
+  --bg:#f6fbff; --ink:#0a1530; --muted:#5b7390; --line:#e6eef7;
+  --blue:#178bff; --blue2:#6fd3ff; --gold:#c9a74a; --accent:#25D366;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,'Noto Sans',sans-serif}
+a{text-decoration:none;color:#0047ff}
+.container{max-width:1160px;margin:0 auto;padding:18px}
+.header{position:sticky;top:0;background:#ffffffbf;backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:40}
+.nav{display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{height:44px;width:auto}
+.menu a{margin:0 8px;font-size:14px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border:1px solid var(--line);border-radius:12px;background:#fff;font-weight:700}
+.btn.primary{background:linear-gradient(180deg,#178bff,#0f6fe0);color:#fff;border:0;box-shadow:0 10px 22px rgba(23,139,255,.25)}
+.btn.gold{background:linear-gradient(180deg,#ffe6a3,#c9a74a);color:#261b00;border:0;box-shadow:0 10px 22px rgba(201,167,74,.25)}
+.badge{padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;font-size:12px}
+.small{font-size:13px;color:var(--muted)}
+.section{padding:22px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px}
+hr.sep{border:0;border-top:1px solid var(--line);margin:10px 0}
+/* Ultra-tech hero slider */
+.hero{position:relative;border-radius:16px;overflow:hidden;background:linear-gradient(120deg,#eaf6ff 0%,#ffffff 60%,#fff6db 100%);border:1px solid var(--line)}
+.hero .slides{position:relative;min-height:360px}
+.slide{position:absolute;inset:0;padding:24px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:10px;opacity:0;transform:translateY(8px);transition:.7s}
+.slide.active{opacity:1;transform:none}
+.slide h1{margin:0 0 6px;font-size:34px}
+.slide p{margin:0 0 10px}
+.slide .media{text-align:center}
+.slide .media img{max-height:300px;width:auto;filter:drop-shadow(0 16px 50px rgba(0,0,0,.18))}
+.pill{display:inline-block;margin:4px 6px 0 0;padding:6px 10px;border-radius:999px;background:#eef6ff;border:1px solid var(--line);font-size:12px}
+.ctrl{position:absolute;right:12px;bottom:12px;display:flex;gap:8px}
+.ctrl button{width:10px;height:10px;border-radius:999px;border:0;background:#c7d8ee}
+.ctrl button.active{background:#178bff}
+/* Brand marquee */
+.brand-strip{position:relative;overflow:hidden;border-radius:12px;border:1px solid var(--line);background:#fff}
+.track{display:flex;gap:18px;animation:slideLeft 40s linear infinite;will-change:transform;padding:10px}
+.brandlogo{min-width:140px;display:flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:10px;background:#fff;padding:6px}
+.brandlogo img{height:28px;object-fit:contain}
+@keyframes slideLeft{from{transform:translateX(0)} to{transform:translateX(-50%)}}
+/* Reviews */
+.reviews{display:flex;gap:12px;overflow:auto;scroll-snap-type:x mandatory;padding-bottom:10px}
+.rev{scroll-snap-align:start;min-width:280px}
+/* Left mini-ambassador */
+.amb{position:fixed;left:16px;bottom:16px;z-index:50;display:flex;align-items:center;gap:8px}
+.amb img{width:64px;height:64px;border-radius:12px;border:1px solid var(--line);background:#fff;animation:wave 2.6s ease-in-out infinite}
+@keyframes wave{0%,100%{transform:rotate(0)} 50%{transform:rotate(6deg)}}
+.amb .bubble{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 12px;box-shadow:0 10px 22px rgba(0,0,0,.08)}
+/* Social CTA row */
+.social{display:flex;gap:10px;flex-wrap:wrap}
+.social .sbtn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;border:1px solid var(--line);background:#fff}
+/* Tally/QuickHeal gold-royal */
+.kingqueen{display:grid;gap:16px}
+@media(min-width:900px){.kingqueen{grid-template-columns:1fr 1fr}}
+.tk{background:linear-gradient(180deg,#fff7d6,#fff);border:1px solid #f1e0a1}
+.qh{background:linear-gradient(180deg,#fff7d6,#fff);border:1px solid #f1e0a1}
+.footer{border-top:1px solid var(--line);background:#fff}

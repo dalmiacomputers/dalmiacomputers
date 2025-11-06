@@ -1,0 +1,62 @@
+[
+  {
+    "name": "HP",
+    "care": "+91-1800-258-7170",
+    "site": "https://support.hp.com/in-en"
+  },
+  {
+    "name": "Dell",
+    "care": "+91-1800-425-4002",
+    "site": "https://www.dell.com/support/home/en-in"
+  },
+  {
+    "name": "ASUS",
+    "care": "+91-1800-209-0365",
+    "site": "https://www.asus.com/support/"
+  },
+  {
+    "name": "Acer",
+    "care": "+91-1800-116-677",
+    "site": "https://www.acer.com/in-en/support"
+  },
+  {
+    "name": "Lenovo",
+    "care": "+91-1800-419-7555",
+    "site": "https://pcsupport.lenovo.com/"
+  },
+  {
+    "name": "MSI",
+    "care": "+91-80-3535-6655",
+    "site": "https://in.msi.com/support"
+  },
+  {
+    "name": "Gigabyte",
+    "care": "+91-80-4040-0000",
+    "site": "https://www.gigabyte.com/Support"
+  },
+  {
+    "name": "Samsung",
+    "care": "+91-1800-5726-7864",
+    "site": "https://www.samsung.com/in/support/"
+  },
+  {
+    "name": "Canon",
+    "care": "+91-1860-180-3366",
+    "site": "https://in.canon/en/support"
+  },
+  {
+    "name": "Epson",
+    "care": "+91-1860-300-1606",
+    "site": "https://www.epson.co.in/support"
+  },
+  {
+    "name": "Brother",
+    "care": "+91-1800-222-422",
+    "site": "https://www.brother.in/en/support"
+  },
+  {
+    "name": "Hikvision",
+    "care": "+91-1800-222-669",
+    "site": "https://www.hikvision.com/en/support/"
+  }
+]

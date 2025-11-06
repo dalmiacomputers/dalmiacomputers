@@ -1,0 +1,13 @@
+
+:root{--line:#e6eef7;--ink:#0b2239;--muted:#577590;--bg:#fff;--chip:#f4f9ff}
+.dc-social-ribbon{position:fixed;left:16px;bottom:16px;display:flex;flex-direction:column;gap:10px;z-index:50}
+.dc-soc-btn{width:44px;height:44px;border-radius:12px;border:1px solid var(--line);background:var(--bg);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.06);cursor:pointer}
+.dc-soc-btn img{width:22px;height:22px;object-fit:contain}
+.dc-soc-cta{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;align-items:center;justify-content:center;z-index:60}
+.dc-soc-card{width:min(420px,92vw);background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 12px 40px rgba(0,0,0,.2)}
+.dc-soc-card h3{margin:0 0 6px;color:var(--ink)}
+.dc-soc-card p{margin:6px 0 12px;color:var(--muted)}
+.dc-soc-actions{display:flex;gap:8px;flex-wrap:wrap}
+.dc-chip{background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:8px 12px;font-weight:700;color:#124;cursor:pointer;text-decoration:none}
+.dc-close{background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-weight:800;cursor:pointer}
+@media (max-width: 560px){.dc-social-ribbon{left:10px;bottom:10px}.dc-soc-btn{width:42px;height:42px}}

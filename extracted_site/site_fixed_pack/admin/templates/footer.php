@@ -1,0 +1,1 @@
+<head><title>Dalmia Computers</title><meta content="Dalmia Computers — Your Trusted Tech Partner in Purulia." name="description"/></head><?php ?><footer><div class="container small">© 2025 Dalmia Computers · Admin CMS</div></footer>

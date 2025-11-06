@@ -1,0 +1,74 @@
+:root{
+  --bg:#f6fbff;
+  --ink:#0b1f33;
+  --mut:#5e7890;
+  --blue:#1a7ff0;
+  --gold:#caa25a;
+  --glass:rgba(255,255,255,.72);
+  --stroke:rgba(11,31,51,.06);
+}
+html,body{background:#ffffff;color:var(--ink);margin:0}
+
+.dc-header{
+  position:sticky; top:0; z-index:50;
+  backdrop-filter:saturate(1.2) blur(10px);
+  background:linear-gradient(180deg,var(--glass),rgba(255,255,255,.35));
+  border-bottom:1px solid var(--stroke);
+}
+
+.dc-nav{
+  max-width:1200px; margin:0 auto; padding:12px 20px;
+  display:flex; align-items:center; gap:16px; justify-content:space-between;
+}
+
+.dc-brand{display:flex; align-items:center; gap:12px; text-decoration:none; color:var(--ink)}
+.dc-logo{width:44px; height:44px; object-fit:contain; filter:drop-shadow(0 4px 12px rgba(0,0,0,.06))}
+.dc-title{display:flex; flex-direction:column; line-height:1.05}
+.dc-title strong{font-weight:800; letter-spacing:.2px}
+.dc-title em{font-style:normal; color:var(--mut); font-size:12px}
+
+.dc-menu{display:flex; gap:14px; align-items:center; flex-wrap:wrap}
+.dc-link{color:var(--ink); text-decoration:none; padding:8px 10px; border-radius:10px; font-weight:600}
+.dc-link:hover{background:rgba(26,127,240,.08)}
+
+.dc-pill{border:1px solid rgba(26,127,240,.25); box-shadow:0 4px 14px rgba(26,127,240,.12) inset}
+.dc-pill--gold{border-color:rgba(202,162,90,.4); box-shadow:0 4px 14px rgba(202,162,90,.15) inset}
+
+.dc-cta{display:flex; align-items:center; gap:12px}
+.dc-iconbtn{width:36px;height:36px;border-radius:12px;border:1px solid var(--stroke);background:#fff;display:grid;place-items:center}
+.dc-iconbtn img{width:18px;height:18px}
+.dc-iconbtn:hover{transform:translateY(-1px)}
+
+.dc-social{display:flex; gap:10px; padding:6px 8px; border-radius:999px; background:#fff; border:1px solid var(--stroke)}
+.dc-social img{width:16px;height:16px; opacity:.9}
+.dc-social:hover img{opacity:1}
+
+.dc-button{background:var(--ink); color:#fff; padding:9px 14px; border-radius:12px; text-decoration:none; font-weight:700}
+.dc-button:hover{background:#13283e}
+.dc-button--full{display:block; text-align:center}
+
+.dc-underline{
+  height:3px; background:linear-gradient(90deg,transparent, var(--gold), transparent);
+  opacity:.9
+}
+
+/* WhatsApp modal */
+.dc-modal{border:none; padding:0; background:transparent}
+.dc-modal::backdrop{background:rgba(0,0,0,.35)}
+.dc-modal__card{width:min(420px,92vw); background:#fff; color:var(--ink); padding:20px; border-radius:16px; position:relative}
+.dc-modal__close{position:absolute; top:10px; right:10px; border:none; background:transparent; font-size:18px}
+.dc-joinimg{width:100%; max-height:140px; object-fit:contain; margin-bottom:10px}
+.dc-hint{color:var(--mut)}
+@media (max-width:980px){
+  .dc-menu{display:none}
+}
+
+/* Hero slider basic */
+.hero{max-width:1200px;margin:24px auto;padding:0 20px}
+.hero-wrap{position:relative; border-radius:18px; overflow:hidden; border:1px solid var(--stroke); background:#eef6ff}
+.hero-slide{display:none}
+.hero-slide.active{display:block}
+.hero-slide img{width:100%; height:420px; object-fit:cover}
+.hero-dots{position:absolute; bottom:10px; left:0; right:0; display:flex; gap:8px; justify-content:center}
+.dot{width:10px;height:10px;border-radius:999px;background:rgba(255,255,255,.7);border:1px solid rgba(0,0,0,.1)}
+.dot.active{background:#1a7ff0}

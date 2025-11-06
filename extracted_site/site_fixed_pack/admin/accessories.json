@@ -1,0 +1,142 @@
+[
+  {
+    "name": "SSD",
+    "img": "./assets/acc/ssd.png",
+    "link": "/products/accessories.html#ssd"
+  },
+  {
+    "name": "RAM",
+    "img": "./assets/acc/ram.png",
+    "link": "/products/accessories.html#ram"
+  },
+  {
+    "name": "HDD",
+    "img": "./assets/acc/hdd.png",
+    "link": "/products/accessories.html#hdd"
+  },
+  {
+    "name": "Motherboard",
+    "img": "./assets/acc/motherboard.png",
+    "link": "/products/accessories.html#motherboard"
+  },
+  {
+    "name": "CPU",
+    "img": "./assets/acc/cpu.png",
+    "link": "/products/accessories.html#cpu"
+  },
+  {
+    "name": "GPU",
+    "img": "./assets/acc/gpu.png",
+    "link": "/products/accessories.html#gpu"
+  },
+  {
+    "name": "Monitor",
+    "img": "./assets/acc/monitor.png",
+    "link": "/products/accessories.html#monitor"
+  },
+  {
+    "name": "Keyboard",
+    "img": "./assets/acc/keyboard.png",
+    "link": "/products/accessories.html#keyboard"
+  },
+  {
+    "name": "Mouse",
+    "img": "./assets/acc/mouse.png",
+    "link": "/products/accessories.html#mouse"
+  },
+  {
+    "name": "Ink Bottles",
+    "img": "./assets/acc/ink_bottles.png",
+    "link": "/products/accessories.html#ink-bottles"
+  },
+  {
+    "name": "Toner",
+    "img": "./assets/acc/toner.png",
+    "link": "/products/accessories.html#toner"
+  },
+  {
+    "name": "UPS",
+    "img": "./assets/acc/ups.png",
+    "link": "/products/accessories.html#ups"
+  },
+  {
+    "name": "Router",
+    "img": "./assets/acc/router.png",
+    "link": "/products/accessories.html#router"
+  },
+  {
+    "name": "Switch",
+    "img": "./assets/acc/switch.png",
+    "link": "/products/accessories.html#switch"
+  },
+  {
+    "name": "CCTV Camera",
+    "img": "./assets/acc/cctv_camera.png",
+    "link": "/products/accessories.html#cctv-camera"
+  },
+  {
+    "name": "DVR",
+    "img": "./assets/acc/dvr.png",
+    "link": "/products/accessories.html#dvr"
+  },
+  {
+    "name": "NVR",
+    "img": "./assets/acc/nvr.png",
+    "link": "/products/accessories.html#nvr"
+  },
+  {
+    "name": "Cat6 Cable",
+    "img": "./assets/acc/cat6_cable.png",
+    "link": "/products/accessories.html#cat6-cable"
+  },
+  {
+    "name": "Speakers",
+    "img": "./assets/acc/speakers.png",
+    "link": "/products/accessories.html#speakers"
+  },
+  {
+    "name": "Webcam",
+    "img": "./assets/acc/webcam.png",
+    "link": "/products/accessories.html#webcam"
+  },
+  {
+    "name": "Laptop Bag",
+    "img": "./assets/acc/laptop_bag.png",
+    "link": "/products/accessories.html#laptop-bag"
+  },
+  {
+    "name": "Cooling Pad",
+    "img": "./assets/acc/cooling_pad.png",
+    "link": "/products/accessories.html#cooling-pad"
+  },
+  {
+    "name": "HDMI Cable",
+    "img": "./assets/acc/hdmi_cable.png",
+    "link": "/products/accessories.html#hdmi-cable"
+  },
+  {
+    "name": "NVMe Enclosure",
+    "img": "./assets/acc/nvme_enclosure.png",
+    "link": "/products/accessories.html#nvme-enclosure"
+  },
+  {
+    "name": "Wifi Adapter",
+    "img": "./assets/acc/wifi_adapter.png",
+    "link": "/products/accessories.html#wifi-adapter"
+  },
+  {
+    "name": "NAS",
+    "img": "./assets/acc/nas.png",
+    "link": "/products/accessories.html#nas"
+  },
+  {
+    "name": "Printer Drum",
+    "img": "./assets/acc/printer_drum.png",
+    "link": "/products/accessories.html#printer-drum"
+  },
+  {
+    "name": "Ink Ribbon",
+    "img": "./assets/acc/ink_ribbon.png",
+    "link": "/products/accessories.html#ink-ribbon"
+  }
+]

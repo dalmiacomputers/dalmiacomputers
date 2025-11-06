@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Admin — Companies Editor</title>
+<link href="/assets/css/base.css" rel="stylesheet"/>
+<meta content="Dalmia Computers — Your Trusted Tech Partner in Purulia." name="description"/></head><body>
+<main class="container">
+<h1 class="h1">Admin — OEM Companies</h1>
+<p class="sub">Edit the list below and click <b>Export JSON</b>. Upload the file to <code>/assets/data/companies.json</code> via cPanel.</p>
+<section class="card">
+<textarea class="form" id="editor" placeholder="[]" rows="18"></textarea>
+<div style="display:flex;gap:10px;margin-top:8px">
+<button class="btn" id="load">Load Current</button>
+<button class="btn" id="add">Add Empty Row</button>
+<button class="btn" id="export">Export JSON</button>
+</div>
+<p class="small">Format: <code>[{"{"}"name":"HP","care":"+91-…","site":"https://…"}]</code></p>
+</section>
+</main>
+<script>
+async function init(){
+  try{
+    const res = await fetch('/assets/data/companies.json', {cache:'no-store'});
+    const data = await res.json();
+    editor.value = JSON.stringify(data, null, 2);
+  }catch(e){
+    editor.value = '[]';
+  }
+}
+document.getElementById('load').onclick = init;
+document.getElementById('add').onclick = ()=>{
+  try{
+    const arr = JSON.parse(editor.value||'[]');
+    arr.push({"name":"New Brand","care":"", "site":""});
+    editor.value = JSON.stringify(arr, null, 2);
+  }catch(e){ alert('Invalid JSON'); }
+};
+document.getElementById('export').onclick = ()=>{
+  const blob = new Blob([editor.value], {type:'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'companies.json';
+  a.click();
+};
+init();
+</script>
+</body></html>

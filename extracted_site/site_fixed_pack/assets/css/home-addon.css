@@ -1,0 +1,27 @@
+
+/* Home add-on (safe to layer over main.css) */
+.hero .slider{min-height:360px}
+@media(min-width:1024px){.hero .slider{min-height:420px}}
+.slide .media img{max-height:300px}
+/* Social icon row upgrade */
+.socials .ico{gap:10px;font-weight:700}
+.socials .ico img{height:18px;width:18px;object-fit:contain}
+/* Reviews smoother scroll */
+.reviews{scroll-snap-type:x mandatory}
+.rev{scroll-snap-align:start}
+/* Mini-ambassador with subtle wave */
+.min-amb{display:flex;align-items:center;gap:10px}
+.min-amb img{width:64px;height:64px;border-radius:12px;border:1px solid var(--line);animation:armwave 3.4s ease-in-out infinite}
+@keyframes armwave{0%,100%{transform:rotate(0)} 50%{transform:rotate(2deg)}}
+/* WhatsApp sticky CTA */
+.wa-fab{position:fixed;right:18px;bottom:86px;z-index:40;background:#25D366;border:0;color:#032140;
+  display:flex;align-items:center;gap:8px;padding:12px 14px;border-radius:999px;font-weight:900;box-shadow:0 10px 22px rgba(0,0,0,.12)}
+.wa-fab img{height:18px;width:18px}
+/* Chat panel (DC-SANA) */
+.chat-panel{position:fixed;right:16px;bottom:16px;width:360px;max-width:94vw;height:540px;background:#fff;border:1px solid #e6eef7;border-radius:16px;display:none;flex-direction:column;box-shadow:0 14px 34px rgba(0,0,0,.18);overflow:hidden}
+.chat-panel header{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;border-bottom:1px solid #e6eef7;background:#f6fbff}
+.chat-log{flex:1;overflow:auto;padding:10px;display:flex;flex-direction:column;gap:8px;background:#fafcff}
+.msg{max-width:82%;padding:8px 10px;border:1px solid #e6eef7;border-radius:10px;background:#fff}
+.me{margin-left:auto;background:#eef6ff}
+.chat-panel form{display:flex;gap:8px;padding:10px;border-top:1px solid #e6eef7;background:#fff}
+.chat-panel input{flex:1;padding:10px;border:1px solid #e6eef7;border-radius:10px}

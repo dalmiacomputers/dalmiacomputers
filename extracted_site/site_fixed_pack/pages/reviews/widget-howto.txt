@@ -1,0 +1,1 @@
+To enable a live reviews widget, set reviews.mode='widget' and paste your embed code into /assets/data/admin-config.json

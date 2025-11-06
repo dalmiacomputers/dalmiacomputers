@@ -1,0 +1,30 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How fast are typical repairs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Same-day for OS/SSD/RAM jobs; complex work varies by parts and diagnostics."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide on-site visits?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, scheduled by route. Remote support available for software issues."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you customize Tally?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, TDL modules for GST/e-invoice, inventory logic, alerts and reports."
+      }
+    }
+  ]
+}

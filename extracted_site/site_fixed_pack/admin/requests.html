@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="/assets/css/base.css" rel="stylesheet"/><title>Product Requests — Admin</title><meta content="Dalmia Computers — Your Trusted Tech Partner in Purulia." name="description"/></head><body>
+<main class="container">
+<h1 class="h1">Product Requests</h1>
+<section class="card">
+<button class="btn" onclick="load()">Load Pending</button>
+<div id="list"></div>
+</section>
+</main>
+<script>
+async function load(){
+  const res = await fetch('/api/admin_list_requests.php?token=REPLACE_ADMIN_TOKEN');
+  const j = await res.json();
+  const box = document.getElementById('list'); box.innerHTML='';
+  (j.items||[]).forEach(it=>{
+    const d=document.createElement('div'); d.className='card';
+    const msg=`Good news! "${it.title}" is now available at Dalmia Computers. Reply to confirm.`;
+    d.innerHTML = `<b>${it.mobile}</b> — ${it.title} [${it.category}] <br><button class="btn" onclick="notify('${it.mobile}', '${encodeURIComponent(msg)}', ${it.id})">Notify via WhatsApp</button>`;
+    box.appendChild(d);
+  });
+}
+async function notify(m,msg,id){
+  window.open('https://wa.me/'+m+'?text='+msg,'_blank');
+  await fetch('/api/admin_mark_notified.php?token=REPLACE_ADMIN_TOKEN&id='+id);
+  load();
+}
+</script>
+</body></html>

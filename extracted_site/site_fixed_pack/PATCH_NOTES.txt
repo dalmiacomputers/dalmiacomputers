@@ -1,0 +1,16 @@
+
+Dalmia Computers Patch – DC‑SANA Update
+--------------------------------------
+Fixes Included:
+✓ Hero slider container + responsive fix
+✓ Placeholder brand marquee script
+✓ Review widget container + fallback
+✓ Social CTA placeholders
+✓ Chatbubble slot + handoff hook
+✓ File paths normalized: /assets/*
+✓ Missing pages scaffold created
+
+Files Updated (placeholders, safe to merge):
+- /index.html (marker comments only)
+- /assets/js/patch-init.js
+- /assets/css/patch-ui.css

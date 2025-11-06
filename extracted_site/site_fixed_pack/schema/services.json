@@ -1,0 +1,73 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "IT Sales, Repair, Networking, CCTV, and Tally/TDL",
+  "provider": {
+    "@type": "Organization",
+    "name": "Dalmia Computers"
+  },
+  "areaServed": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 23.33,
+      "longitude": 86.37
+    },
+    "geoRadius": 200000
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Catalog",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Laptops & Desktops"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Printers & Scanners"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Repairs & AMC"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Networking & Wi\u2011Fi"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "CCTV Installation"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Software Licensing"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Tally Prime & TDL"
+        }
+      }
+    ]
+  }
+}

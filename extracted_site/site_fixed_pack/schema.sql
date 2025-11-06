@@ -1,0 +1,19 @@
+-- Dalmia Universal DB schema
+CREATE TABLE IF NOT EXISTS dc_customers (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  mobile VARCHAR(20) NOT NULL UNIQUE,
+  name VARCHAR(120),
+  email VARCHAR(160),
+  address TEXT,
+  ptype VARCHAR(40),
+  brand VARCHAR(80),
+  serial VARCHAR(120),
+  pdate DATE NULL,
+  wend DATE NULL,
+  pref VARCHAR(20),
+  notes TEXT,
+  invoice_path VARCHAR(255),
+  source VARCHAR(40),
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Dalmia Computers;;;;
+FN:Dalmia Computers
+ORG:Dalmia Computers
+TITLE:Your Trusted Tech Partner.
+TEL;TYPE=WORK,VOICE:+91 97342 90001
+TEL;TYPE=CELL,VOICE:+91 81452 90001
+EMAIL;TYPE=PREF,INTERNET:dalmiacomputers@gmail.com
+URL:https://dalmiacomputers.in
+NOTE:GST 19AEHPD9752K1Z0
+END:VCARD

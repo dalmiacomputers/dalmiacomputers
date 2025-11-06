@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Selfie Contest — Dalmia Computers</title>
+<link href="/assets/css/base.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+<style>.input{width:100%;padding:10px;border:1px solid var(--line);border-radius:10px;margin:6px 0}</style>
+<meta content="Dalmia Computers — Your Trusted Tech Partner in Purulia." name="description"/></head><body>
+<header class="header"><div class="container nav">
+<a href="/">Home</a>
+<a href="/pages/contests/lucky-draw.html">Lucky Draw</a>
+<a href="/pages/contests/selfie-contest.html">Selfie Contest</a>
+<a href="/support">Support</a>
+</div></header>
+<main class="container">
+<section class="hero">
+<h1 class="h1">Selfie Contest</h1>
+<p class="sub">Unlimited uploads allowed this period. Tag <b>@dalmiacomputets</b>. Same referral code works here too.</p>
+</section>
+<div class="grid grid-2">
+<form class="card" id="sfForm">
+<input class="input" id="sfName" placeholder="Full Name" required=""/>
+<input class="input" id="sfPhone" placeholder="Mobile Number" required=""/>
+<input class="input" id="sfEmail" placeholder="Email" required="" type="email"/>
+<input class="input" id="sfReferral" placeholder="Referral Code (optional)"/>
+<label class="small">Upload Selfies (max 5 at a time)</label>
+<input accept="image/*" class="input" id="sfPics" multiple="" required="" type="file"/>
+<label class="small"><input id="sfTos" required="" type="checkbox"/> I accept the terms &amp; conditions.</label>
+<input id="sfHP" style="display:none" type="text"/>
+<input id="sfTS" type="hidden" value="1762286736783"/>
+<button class="cta" type="submit">Submit Selfies</button>
+<div class="small">Multiple entries allowed.</div>
+</form>
+<article class="card">
+<h3>How winners are decided</h3>
+<ul class="small">
+<li>Fair scoring (quality + engagement) + random seed.</li>
+<li>Anti-bot: timing + honeypot (add reCAPTCHA server-side).</li>
+<li>Referral scoreboard boosts chances (separate prize too).</li>
+</ul>
+<h3>Terms</h3>
+<ul class="small">
+<li>Photos must be your own. No spam, no bots.</li>
+<li>We may feature winners on our channels.</li>
+<li>Our decision is final to keep it fair for everyone.</li>
+</ul>
+</article>
+</div>
+<section class="card" style="margin-top:12px">
+<h3>Scoreboard (Referrals)</h3>
+<div class="small" id="sfBoard">No data yet.</div>
+</section>
+</main>
+<footer class="footer"><div class="container">© 2025 Dalmia Computers · Your Trusted Tech Partner.</div></footer>
+<script defer="" src="/assets/js/app.js"></script>
+<script>
+  function genAck(){ return 'SF-'+Math.random().toString(36).slice(2,8).toUpperCase(); }
+  async function makePDF(name, phone, email, ack, ref){
+    const { jsPDF } = window.jspdf; const doc = new jsPDF();
+    doc.setFontSize(16); doc.text("Dalmia Computers — Selfie Contest Receipt", 14, 18);
+    doc.setFontSize(11);
+    doc.text("Receipt: "+ack, 14, 28);
+    doc.text("Name: "+name, 14, 36);
+    doc.text("Phone: "+phone, 14, 44);
+    if(ref) doc.text("Referral: "+ref, 14, 52);
+    doc.text("Rules: Unlimited uploads this period. Be original. No spam/bots. Winners decided fairly.", 14, 66, {maxWidth:180});
+    doc.save(ack + ".pdf");
+  }
+  document.getElementById('sfForm').addEventListener('submit', async (e)=>{
+    e.preventDefault();
+    const ts=parseInt(document.getElementById('sfTS').value,10); const hp=document.getElementById('sfHP');
+    const now=Date.now(); if(hp.value.trim()!=='' || (now-ts)<8000){ alert('Please wait a few seconds and ensure form is human.'); return; }
+    const name=sfName.value.trim(), phone=sfPhone.value.trim(), email=sfEmail.value.trim(), ref=sfReferral.value.trim();
+    const ack = genAck();
+    if(ref){ const k='ref_'+ref; const n=parseInt(localStorage.getItem(k)||'0',10)+1; localStorage.setItem(k,n); }
+    await makePDF(name, phone, email, ack, ref);
+    alert('Thanks! Receipt '+ack+' generated. We will notify winners on all channels.');
+  });
+  (function(){
+    const out=document.getElementById('sfBoard');
+    const rows=Object.keys(localStorage).filter(k=>k.startsWith('ref_')).map(k=>[k.replace('ref_',''),parseInt(localStorage.getItem(k),10)]).sort((a,b)=>b[1]-a[1]).slice(0,10);
+    if(!rows.length){ out.textContent='No referrals yet.'; return; }
+    out.innerHTML='<ol>'+rows.map(r=>'<li>'+r[0]+': '+r[1]+'</li>').join('')+'</ol>';
+  })();
+</script>
+</body></html>

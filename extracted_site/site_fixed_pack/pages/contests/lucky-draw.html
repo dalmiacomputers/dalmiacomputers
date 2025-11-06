@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Lucky Draw — Dalmia Computers</title>
+<link href="/assets/css/base.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+<style>.input{width:100%;padding:10px;border:1px solid var(--line);border-radius:10px;margin:6px 0}</style>
+<meta content="Dalmia Computers — Your Trusted Tech Partner in Purulia." name="description"/></head><body>
+<header class="header"><div class="container nav">
+<a href="/">Home</a>
+<a href="/pages/contests/lucky-draw.html">Lucky Draw</a>
+<a href="/pages/contests/selfie-contest.html">Selfie Contest</a>
+<a href="/support">Support</a>
+</div></header>
+<main class="container">
+<section class="hero">
+<h1 class="h1">Lucky Draw</h1>
+<p class="sub">One entry per person per period. Referral code boosts your scoreboard. Winners notified via SMS, WhatsApp, RCS and email.</p>
+</section>
+<div class="grid grid-2">
+<form class="card" id="ldForm">
+<input class="input" id="ldName" placeholder="Full Name" required=""/>
+<input class="input" id="ldPhone" placeholder="Mobile Number" required=""/>
+<input class="input" id="ldEmail" placeholder="Email" required="" type="email"/>
+<input class="input" id="ldReferral" placeholder="Referral Code (optional)"/>
+<div>
+<label class="small">Upload proof of following (min 2 images)</label>
+<input accept="image/*" class="input" id="ldPic1" required="" type="file"/>
+<input accept="image/*" class="input" id="ldPic2" required="" type="file"/>
+</div>
+<label class="small"><input id="ldTos" required="" type="checkbox"/> I accept the terms &amp; conditions.</label>
+<input id="ldHP" style="display:none" type="text"/>
+<input id="ldTS" type="hidden" value="1762286736783"/>
+<button class="cta" type="submit">Submit Entry</button>
+<div class="small">You can submit exactly one form per period.</div>
+</form>
+<article class="card">
+<h3>Prizes this period</h3>
+<ul class="small">
+<li>1st Prize — Premium Accessory Kit</li>
+<li>2nd Prize — Wireless Keyboard &amp; Mouse Combo</li>
+<li>3rd Prize — High‑performance Earbuds</li>
+<li>Referral Champion — Special Gift</li>
+</ul>
+<h3>Terms</h3>
+<ul class="small">
+<li>One entry per person per period.</li>
+<li>Referral code is common across contests.</li>
+<li>Anti‑spam measures: captcha/honeypot/timing.</li>
+<li>No purchase necessary. Winners chosen fairly.</li>
+</ul>
+</article>
+</div>
+<section class="card" style="margin-top:12px">
+<h3>Scoreboard (Referrals)</h3>
+<div class="small" id="ldBoard">No data yet.</div>
+</section>
+</main>
+<footer class="footer"><div class="container">© 2025 Dalmia Computers · Your Trusted Tech Partner.</div></footer>
+<script defer="" src="/assets/js/app.js"></script>
+<script>
+  function genCoupon(){ return 'DC-'+Math.random().toString(36).slice(2,8).toUpperCase(); }
+  async function makePDF(name, phone, email, coupon, ref){
+    const { jsPDF } = window.jspdf; const doc = new jsPDF();
+    doc.setFontSize(16); doc.text("Dalmia Computers — Lucky Draw Token", 14, 18);
+    doc.setFontSize(11);
+    doc.text("Coupon: "+coupon, 14, 28);
+    doc.text("Name: "+name, 14, 36);
+    doc.text("Phone: "+phone, 14, 44);
+    doc.text("Email: "+email, 14, 52);
+    if(ref) doc.text("Referral: "+ref, 14, 60);
+    doc.text("Prizes: 1) Premium Accessory Kit  2) Wireless KB+Mouse  3) Earbuds", 14, 74, {maxWidth:180});
+    doc.text("Referral Concept: Share your referral code. Highest valid referrals wins special gift.", 14, 86, {maxWidth:180});
+    doc.text("T&C: One entry/person/period. No bots/spam. Dalmia decision is final.", 14, 104, {maxWidth:180});
+    doc.save(coupon + ".pdf");
+  }
+  function canSubmitOnce(phone){ const key='ld_'+phone; if(localStorage.getItem(key)) return false; localStorage.setItem(key,'1'); return true; }
+  document.getElementById('ldForm').addEventListener('submit', async (e)=>{
+    e.preventDefault();
+    const ts=parseInt(document.getElementById('ldTS').value,10); const hp=document.getElementById('ldHP');
+    const now=Date.now(); if(hp.value.trim()!=='' || (now-ts)<8000){ alert('Please wait a few seconds and ensure form is human.'); return; }
+    const name=ldName.value.trim(), phone=ldPhone.value.trim(), email=ldEmail.value.trim(), ref=ldReferral.value.trim();
+    if(!canSubmitOnce(phone)){ alert('You already submitted for this period.'); return; }
+    const coupon = genCoupon();
+    if(ref){ const k='ref_'+ref; const n=parseInt(localStorage.getItem(k)||'0',10)+1; localStorage.setItem(k,n); }
+    await makePDF(name, phone, email, coupon, ref);
+    alert('Thanks! Your coupon is '+coupon+'. You will also receive updates by SMS/WhatsApp/Email.');
+  });
+  (function(){
+    const out=document.getElementById('ldBoard');
+    const rows=Object.keys(localStorage).filter(k=>k.startsWith('ref_')).map(k=>[k.replace('ref_',''),parseInt(localStorage.getItem(k),10)]).sort((a,b)=>b[1]-a[1]).slice(0,10);
+    if(!rows.length){ out.textContent='No referrals yet.'; return; }
+    out.innerHTML='<ol>'+rows.map(r=>'<li>'+r[0]+': '+r[1]+'</li>').join('')+'</ol>';
+  })();
+</script>
+</body></html>

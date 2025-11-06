@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Wireless Mouse",
+    "img": "/assets/placeholders/mouse.jpg",
+    "desc": "Smooth 2.4GHz wireless performance"
+  },
+  {
+    "title": "NVMe SSD 1TB",
+    "img": "/assets/placeholders/ssd.jpg",
+    "desc": "Blazing fast storage for creators"
+  },
+  {
+    "title": "1080p Webcam",
+    "img": "/assets/placeholders/webcam.jpg",
+    "desc": "Crystal\u2011clear video calls"
+  },
+  {
+    "title": "Mechanical Keyboard",
+    "img": "/assets/placeholders/keyboard.jpg",
+    "desc": "Tactile, durable, RGB optional"
+  }
+]

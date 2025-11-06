@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Media — Dalmia Computers</title>
+<meta content="Promotional videos and images from brand partners and creators." name="description"/>
+<link href="/assets/css/site.css" rel="stylesheet"/>
+<script type="application/ld+json">{
+ "@context":"https://schema.org","@type":"CollectionPage",
+ "name":"Media — Dalmia Computers",
+ "hasPart":[
+   {"@type":"CreativeWork","name":"Brand Videos"},
+   {"@type":"CreativeWork","name":"Showroom Videos"},
+   {"@type":"CreativeWork","name":"Image Gallery"}
+ ]
+}</script>
+</head><body>
+<header class="header"><div class="wrap nav">
+<div class="brand"><img alt="Dalmia Computers" src="/assets/logo.png"/><div><b>Dalmia Computers</b><div class="small">Your Trusted Tech Partner</div></div></div>
+<nav class="kv">
+<a href="/">Home</a><a href="/pages/media/">Media</a><a href="/pages/careers/">Careers</a>
+</nav>
+</div></header>
+<main class="wrap">
+<section class="card">
+<h1>Promotional Videos</h1>
+<p class="small">Official brand creatives and creator-made videos featuring our showroom and services.</p>
+<div class="gallery" id="videoGrid">
+<!-- Example embeds: replace VIDEO_ID -->
+<div class="media-card"><iframe allowfullscreen="" src="https://www.youtube.com/embed/VIDEO_ID" title="Brand video"></iframe><div class="meta"><div class="share"><button onclick="shareMedia('Brand Video','https://www.youtube.com/watch?v=VIDEO_ID')">Share</button></div></div></div>
+</div>
+</section>
+<section class="card">
+<h2>Image Gallery</h2>
+<div class="gallery" id="imgGrid">
+<div class="media-card"><img alt="Showroom" src="/assets/media/sample1.jpg"/><div class="meta"><div class="share"><button onclick="shareMedia('Showroom','/assets/media/sample1.jpg')">Share</button></div></div></div>
+</div>
+</section>
+<section class="card">
+<h2>Creator Upload (Admin)</h2>
+<form action="/api/upload_media.php" enctype="multipart/form-data" method="post">
+<input accept="image/*,video/*" multiple="" name="media[]" type="file"/>
+<select name="target"><option value="video">Videos</option><option value="image">Images</option></select>
+<button class="btn">Upload</button>
+<div class="small">Tip: After upload, items are queued to share via connected socials (if tokens configured).</div>
+</form>
+</section>
+</main>
+<footer class="footer">© 2025 Dalmia Computers · Your Trusted Tech Partner</footer>
+<script>
+async function shareMedia(title, url){
+  try{
+    if(navigator.share){ await navigator.share({title, url}); }
+    else { prompt('Copy link and share:', url); }
+  }catch(e){}
+}
+</script>
+</body></html>

@@ -1,0 +1,28 @@
+<head><title>Dalmia Computers</title><meta content="Dalmia Computers — Your Trusted Tech Partner in Purulia." name="description"/></head><!-- Reviews Carousel -->
+<div id="reviewWidget"></div>
+<div class="row" id="reviewRow"></div>
+<script>
+(async function(){
+  const st = window.DC_SITE || {};
+  const host = document.getElementById('reviewWidget');
+  if(st.trustindex){ host.innerHTML = st.trustindex; return; }
+  // Static curated fallback (4★/5★ only)
+  const REVIEWS=[
+    {name:'S. Mukherjee',stars:5,text:'SSD upgrade + cleanup. Feels brand new!',avatar:'/assets/rev/1.jpg'},
+    {name:'Anita Koley',stars:5,text:'Genuine printers, fair price. Same‑day install.',avatar:'/assets/rev/2.jpg'},
+    {name:'Rahul Verma',stars:4,text:'Neat CCTV install. Remote view is solid.',avatar:'/assets/rev/3.jpg'},
+    {name:'Md. Arif',stars:5,text:'Tally TDL saved hours every week.',avatar:'/assets/rev/4.jpg'}
+  ];
+  const row=document.getElementById('reviewRow');
+  REVIEWS.forEach(r=>{
+    const d=document.createElement('div');
+    d.className='card review';
+    d.innerHTML=`<img class="avatar" src="${r.avatar}" alt="${r.name}">
+    <div class="meta"><b>${r.name}</b> <span>${'★'.repeat(r.stars)}${'☆'.repeat(5-r.stars)}</span></div>
+    <p>${r.text}</p>`;
+    row.appendChild(d);
+  });
+  // simple auto-scroll
+  let x=0; function tick(){ x-=0.3; row.style.transform=`translateX(${x}px)`; requestAnimationFrame(tick);} tick();
+})();
+</script>
