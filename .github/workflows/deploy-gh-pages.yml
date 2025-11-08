@@ -1,4 +1,4 @@
-﻿name: Deploy to GitHub Pages (static snapshot)
+﻿name: Deploy to GitHub Pages (auto-fix)
 on:
   push:
     branches:
@@ -8,18 +8,27 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout main
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Prepare site folder
+      - name: Prepare static site folder
         run: |
           mkdir -p site
-          rsync -av --delete project/chhama/fix_patch_v22/ site/
+          if [ -d "project/chhama/fix_patch_v22" ]; then
+            echo "✅ Found site folder, copying contents..."
+            rsync -av --delete project/chhama/fix_patch_v22/ site/
+          else
+            echo "⚠️ project/chhama/fix_patch_v22 not found, creating placeholder page."
+            echo "<html><head><title>Dalmia Computers | Chhama</title></head><body><h1>🚧 Site Under Build</h1><p>Chhama Auto System is preparing deployment...</p></body></html>" > site/index.html
+          fi
+          echo "✅ Site folder ready:"
+          ls -l site
 
-      - name: Deploy to gh-pages
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
+          force_orphan: true
